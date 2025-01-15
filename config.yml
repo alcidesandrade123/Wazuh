@@ -1,0 +1,26 @@
+nodes:
+  # Subistituir pelos endereços IP dos servidores master e os worker´s
+  indexer:
+    - name: node-1
+      ip: "192.168.19.142"
+    - name: node-2
+      ip: "192.168.19.143"
+    - name: node-3
+      ip: "192.168.19.144"
+
+  # Subistituir pelos endereços IP dos servidores master e os worker´s
+  server:
+    - name: wazuh-1
+      ip: "192.168.19.142"
+      node_type: master
+    - name: wazuh-2
+      ip: "192.168.19.143"
+      node_type: worker
+    - name: wazuh-3
+      ip: "192.168.19.144"
+      node_type: worker
+
+  # Subistituir pelo endereço IP do servidor master
+  dashboard:
+    - name: dashboard
+      ip: "192.168.19.142"
